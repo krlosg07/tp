@@ -1,13 +1,11 @@
-#!/usr/bin/env python3
-
 import socket
 
-#HOST = TODO
-#PORT = TODO
+HOST = TODO
+PORT = TODO
 
-#sock=socket.socket(TODO,TODO)
-#sock.connect((HOST, PORT))
-#sock.sendall(msg)
-#data = s.recv(1024)
-#print(data)
-#sock.close()
+with socket.socket(TODO, TODO) as s:
+    s.connect((HOST, PORT))
+    s.sendall(b"Hello, world")
+    data = s.recv(1024)
+
+print(f"Received {data!r}")
