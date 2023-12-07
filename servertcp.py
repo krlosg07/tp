@@ -4,9 +4,9 @@ HOST = TODO
 PORT = TODO
 
 with socket.socket(TODO, TODO) as s:
-    s.bind((HOST, PORT))
+    socket.bind((HOST, PORT))
     s.listen()
-    conn, addr = sock.accept()
+    conn, addr = socket.accept()
     with conn:
         print(f"Connected by {addr}")
         while True:
